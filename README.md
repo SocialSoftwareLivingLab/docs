@@ -1,3 +1,6 @@
+![Static Badge](https://img.shields.io/badge/content-documentation-blue)
+![Static Badge](https://img.shields.io/badge/goal-learning-green)
+
 # Docs and Tutorials
 
 This repository contains documents and tutorials as references for software development in the context of the S2L2.
