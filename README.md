@@ -5,3 +5,9 @@ This repository contains documents and tutorials as references for software deve
 ## Software Architecture
 
 [Reference Architecture for Web Applications](SwArch/ReferenceWebArchitecture.md)
+
+
+## Contributing
+
+Please, feel free to open an issue with suggestions or corrections in our documentation.
+When opening issues, please use adequate labels.
