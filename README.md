@@ -33,11 +33,11 @@ Explore our collection of articles, where we discuss the latest trends, best pra
 
 - 🏗️ **Software Architecture**
   - [Reference Architecture for Web Applications](SwArch/ReferenceWebArchitecture.md)
+  - [How To Use MVVM in React Using Hooks and TypeScript](https://www.perssondennis.com/articles/how-to-use-mvvm-in-react-using-hooks-and-typescript)
 
 - ⚙️ **Github Actions**
   - [Setting up a CI/CD workflow on GitHub Actions for a React App (with GitHub Pages and Codecov)](https://dev.to/dyarleniber/setting-up-a-ci-cd-workflow-on-github-actions-for-a-react-app-with-github-pages-and-codecov-4hnp)
-  - [How To Use MVVM in React Using Hooks and TypeScript](https://www.perssondennis.com/articles/how-to-use-mvvm-in-react-using-hooks-and-typescript)
-
+  
 #### 🤝 Contributing
 
 Please feel free to open an issue with suggestions or corrections in our documentation. When opening issues, please use adequate labels.
