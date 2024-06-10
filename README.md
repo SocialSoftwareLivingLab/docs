@@ -12,6 +12,9 @@ We offer a curated selection of courses designed to enhance your skills in vario
 
 #### Topics
 
+- **Jest**
+  - [Jest Repo](https://github.com/SocialSoftwareLivingLab/jest-template) - In this repository, the initial concepts about Jest and how to use the tool are introduced.
+
 - **TypeScript**
   - [Building JavaScript Applications Using TypeScript](https://learn.microsoft.com/pt-br/training/paths/build-javascript-applications-typescript/) - In this Microsoft course, discover how utilizing TypeScript for JavaScript development can aid in crafting more robust code, reducing runtime type errors, and much more. (PT-BR)
   - [Introductory TypeScript Course](https://youtu.be/VGu1vDAWNTg?si=yYK7LBIvJwvlargG) - An introduction to TypeScript's main features in video format. (EN-US)
@@ -57,6 +60,9 @@ Este repositório contém documentos e tutoriais como referências para o desenv
 Oferecemos uma seleção curada de cursos projetados para aprimorar suas habilidades em várias áreas de desenvolvimento de software. Cada curso é categorizado por tópico, facilitando a busca pelo que você precisa.
 
 #### Tópicos
+
+- **Jest**
+  - [Jest Repo](https://github.com/SocialSoftwareLivingLab/jest-template) - Nesse Repositório são introduzidos os conceitos iniciais sobre Jest e como utilizar a ferramenta.
 
 - **TypeScript**
   - [Criar aplicativos JavaScript usando o TypeScript](https://learn.microsoft.com/pt-br/training/paths/build-javascript-applications-typescript/) -  Nesse curso da Microsoft, você verá como o uso de TypeScript para desenvolvimento em JavaScript pode ajudar a criar um código mais robusto, reduzir erros de tipo de runtime e muito mais. (PT-BR)
