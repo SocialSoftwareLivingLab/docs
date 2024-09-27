@@ -1,16 +1,12 @@
-## 📘 English
+## 📚 Docs and Tutorials (English Version)
 ![Content: Documentation](https://img.shields.io/badge/content-documentation-007ec6.svg?style=for-the-badge&logo=markdown&logoColor=white)
 ![Goal: Learning](https://img.shields.io/badge/goal-learning-4c1.svg?style=for-the-badge&logo=githubactions&logoColor=white)
-
-### 📚 Docs and Tutorials
 
 This repository contains documents and tutorials as references for software development in the context of S2L2.
 
 ### 📖 Courses
 
 We offer a curated selection of courses designed to enhance your skills in various software development areas. Each course is categorized by topic, making it easy for you to find what you're looking for.
-
-#### Topics
 
 - **Jest**
   - [Jest Repo](https://github.com/SocialSoftwareLivingLab/jest-template) - In this repository, the initial concepts about Jest and how to use the tool are introduced.
@@ -24,15 +20,12 @@ We offer a curated selection of courses designed to enhance your skills in vario
   - [Creating Your First Application in React](https://balta.io/cursos/criando-um-app-com-react-typeScript-hooks-context-forms) - In this course, we'll build a complete app using React and TypeScript, covering state management with React Context, using React Hooks and React Forms. (PT-BR)
   - [React Hooks Simplified](https://courses.webdevsimplified.com/react-hooks-simplified) - Learn the key React Hooks. (EN-US)
 
-### 📑 Articles
+### 📑 Tutorials and Other Materials
 
 Explore our collection of articles, where we discuss the latest trends, best practices, and insights in software development across various topics.
 
-#### Topics
-
-- **TypeScript**
-
-- **React**
+- **Python Virtual Environments**
+  - [How to Set Up a Virtual Environment in Python – And Why It's Useful](https://www.freecodecamp.org/news/how-to-setup-virtual-environments-in-python/)  
 
 - 🏗️ **Software Architecture**
   - [Reference Architecture for Web Applications](SwArch/ReferenceWebArchitecture.md)
@@ -47,19 +40,15 @@ Please feel free to open an issue with suggestions or corrections in our documen
 
 ---
 
-## 📘 Português
+## 📚 Documentação e Tutoriais (Versão em Português-BR)
 ![Conteúdo: Documentação](https://img.shields.io/badge/conteúdo-documentação-007ec6.svg?style=for-the-badge&logo=markdown&logoColor=white)
 ![Objetivo: Aprendizado](https://img.shields.io/badge/objetivo-aprendizado-4c1.svg?style=for-the-badge&logo=githubactions&logoColor=white)
-
-### 📚 Documentação e Tutoriais
 
 Este repositório contém documentos e tutoriais como referências para o desenvolvimento de software no contexto do S2L2.
 
 ### 📖 Cursos
 
 Oferecemos uma seleção curada de cursos projetados para aprimorar suas habilidades em várias áreas de desenvolvimento de software. Cada curso é categorizado por tópico, facilitando a busca pelo que você precisa.
-
-#### Tópicos
 
 - **Jest**
   - [Jest Repo](https://github.com/SocialSoftwareLivingLab/jest-template) - Nesse Repositório são introduzidos os conceitos iniciais sobre Jest e como utilizar a ferramenta.
@@ -72,15 +61,13 @@ Oferecemos uma seleção curada de cursos projetados para aprimorar suas habilid
   - [Introdução ao React](https://react.dev/learn) - Introdução Oficial da Documentação do React. (EN-US)
   - [Criando a Primeira aplicação em React](https://balta.io/cursos/criando-um-app-com-react-typeScript-hooks-context-forms) - Neste curso vamos criar um App completo utilizando React e TypeScript, passando pelos conceitos de gestão de estado com React Context, utilizando React Hooks e React Forms. (PT-BR)
   - [React Hooks Simplified](https://courses.webdevsimplified.com/react-hooks-simplified) - Aprenda os principais Hooks do React. (EN-US)
-### 📑 Artigos
+
+### 📑 Tutoriais e Outros Materiais
 
 Explore nossa coleção de artigos, onde discutimos as últimas tendências, melhores práticas e insights em desenvolvimento de software em vários tópicos.
 
-#### Tópicos
-
-- **TypeScript**
- 
-- **React**
+- **Python Virtual Environments**
+  - [Como Configurar um Ambiente Virtual em Python – E Porque Isso é Útil](https://www.freecodecamp.org/news/how-to-setup-virtual-environments-in-python/)  
 
 - 🏗️ **Arquitetura de Software**
   - [Arquitetura de Referência para Aplicações Web](SwArch/ReferenceWebArchitecture.md)
