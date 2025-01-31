@@ -6,7 +6,7 @@
 ---
 
 ## Passos
-### 1. Checkout para o Commit sem ESLint
+### 1. Checkout para o Commit mais recente do Zero Obito sem ESLint
 ```sh
 git checkout a4496ff
 ```
@@ -31,6 +31,12 @@ export default tseslint.config(
     // Indicação do arquivo `tsconfig`
     {
         languageOptions: {
+            // define variáveis globais do browser, para o erro de variável nao   
+            // definida nao ser apontado para as apis do browser
+            globals: {
+                ...globals.browser,
+            },
+            // localizacao do tsconfig
             parserOptions: {
                 projectService: true,
                 tsconfigRootDir: import.meta.dirname,
@@ -78,6 +84,9 @@ export default tseslint.config(
     tseslint.configs.stylisticTypeChecked,
     {
         languageOptions: {
+            globals: {
+                ...globals.browser,
+            },
             parserOptions: {
                 projectService: true,
                 tsconfigRootDir: import.meta.dirname,
@@ -134,6 +143,9 @@ export default tseslint.config(
     tseslint.configs.stylisticTypeChecked,
     {
         languageOptions: {
+            globals: {
+                ...globals.browser,
+            },
             parserOptions: {
                 projectService: true,
                 tsconfigRootDir: import.meta.dirname,
