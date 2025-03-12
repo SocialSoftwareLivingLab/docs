@@ -96,7 +96,7 @@ docker ps
 ```
 
 - os containers rodam em um ambiente virtual, o que significa que todos os dados criados são perdidos quando o container para, isto é, o container não possui estado.
-- contudo, seria muito interessante, termos logs gravados em diretório local para facilitar a visualização e acompanhamento dos nossos container,
+- contudo, seria muito interessante, termos logs gravados em diretório local para facilitar a visualização e acompanhamento dos nossos containers,
 pois a visualização dos logs por id apenas fica disponível enquanto o container estiver executando. 
 - **Para isso existe o conceito de Volume**. Um volume é uma conexão entre um arquivo dentro do container e uma arquivo na máquina rost, que associa tudo que é gravado nesse arquivo, também é gravado localmente
 
