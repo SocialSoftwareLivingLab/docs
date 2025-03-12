@@ -42,7 +42,7 @@ um arquivo package.json, mais ou menos igual a:
 }
 ```
 
-Para o próximo passo, será necessário a criação do Dockerfile, que é um arquivo que específica quais 
+Para o próximo passo, será necessário a criação do Dockerfile, que é um arquivo que especifica quais 
 são as configurações do container, como, por exemplo, o que precisa ser instalado, qual imagem utilizar, que arquivos copiar e quais comandos executar. Sem ele, seria necessário um trabalho manual a toda hora para iniciar o container. Crie o arquivo chamado 'Dockerfile' com o seguinte conteúdo:
 ```Dockerfile
 # Usa a imagem oficial do Node.js
