@@ -22,7 +22,7 @@ Oferecemos uma seleção curada de cursos projetados para aprimorar suas habilid
 
 - **Linter**
   - [Aplique um linter no projeto ZerÓbito](./articles/linter.md) - Este tutorial mostra como definir e criar regras em projeto com React e Typescript. (PT-BR)
-  - [Typescript-eslint](https://typescript-eslint.io/getting-started/) - Quick start oficial do typescript-eslint.
+  - [Typescript-eslint](https://typescript-eslint.io/getting-started/) - Quick start oficial do typescript-eslint. (EN-US)
 
 - **Docker**
   - [Introdução na prática aos principais conceitos de Docker](./articles/docker.md) - Uma visão geral sobre a criação de containers, como automatizar e gerenciar o processo com Docker Compose e volumes, este tutorial é uma base para os principais conceitos. (PT-BR)
@@ -73,7 +73,7 @@ We offer a curated selection of courses designed to enhance your skills in vario
 
   - **Linter**  
   - [Apply a Linter to the ZerÓbito Project](./articles/linter.md) - This tutorial shows how to define and create rules in a project using React and TypeScript. (PT-BR)  
-  - [TypeScript-ESLint](https://typescript-eslint.io/getting-started/) - Official quick start guide for TypeScript-ESLint.  
+  - [TypeScript-ESLint](https://typescript-eslint.io/getting-started/) - Official quick start guide for TypeScript-ESLint. (EN-US)
 
 - **Docker**
   - [Introduction to Docker: Practical Guide to Key Concepts](./articles/docker.md) - An overview of container creation, automation, and management using Docker Compose and volumes. This tutorial provides a foundation for the main concepts. (PT-BR)  
