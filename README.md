@@ -71,7 +71,7 @@ We offer a curated selection of courses designed to enhance your skills in vario
   - [Creating Your First Application in React](https://balta.io/cursos/criando-um-app-com-react-typeScript-hooks-context-forms) - In this course, we'll build a complete app using React and TypeScript, covering state management with React Context, using React Hooks and React Forms. (PT-BR)
   - [React Hooks Simplified](https://courses.webdevsimplified.com/react-hooks-simplified) - Learn the key React Hooks. (EN-US)
 
-  - **Linter**  
+- **Linter**  
   - [Apply a Linter to the ZerÓbito Project](./articles/linter.md) - This tutorial shows how to define and create rules in a project using React and TypeScript. (PT-BR)  
   - [TypeScript-ESLint](https://typescript-eslint.io/getting-started/) - Official quick start guide for TypeScript-ESLint. (EN-US)
 
