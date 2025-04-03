@@ -20,6 +20,15 @@ Oferecemos uma seleção curada de cursos projetados para aprimorar suas habilid
   - [Criando a Primeira aplicação em React](https://balta.io/cursos/criando-um-app-com-react-typeScript-hooks-context-forms) - Neste curso vamos criar um App completo utilizando React e TypeScript, passando pelos conceitos de gestão de estado com React Context, utilizando React Hooks e React Forms. (PT-BR)
   - [React Hooks Simplified](https://courses.webdevsimplified.com/react-hooks-simplified) - Aprenda os principais Hooks do React. (EN-US)
 
+- **Linter**
+  - [Aplique um linter no projeto ZerÓbito](./articles/linter.md) - Este tutorial mostra como definir e criar regras em projeto com React e Typescript. (PT-BR)
+  - [Typescript-eslint](https://typescript-eslint.io/getting-started/) - Quick start oficial do typescript-eslint. (EN-US)
+
+- **Docker**
+  - [Introdução na prática aos principais conceitos de Docker](./articles/docker.md) - Uma visão geral sobre a criação de containers, como automatizar e gerenciar o processo com Docker Compose e volumes, este tutorial é uma base para os principais conceitos. (PT-BR)
+  - [Tutorial de Docker para iniciantes](https://docker-curriculum.com/) - Aprenda a configurar o Docker e executar seus próprios contêineres, enquanto realiza aplicações na prática. (EN-US)
+  - [Configuração e gerenciamento de múltiplos ambientes](https://overcast.blog/multi-environment-deployments-with-docker-a-guide-890e193191b6) - Este é um tutorial para usuários que se sentem confortáveis com docker e querem aprender a como criar um workflow com diferentes ambientes de desenvolvimento. (EN-US)
+
 ### 📑 Tutoriais e Outros Materiais
 
 Explore nossa coleção de artigos, onde discutimos as últimas tendências, melhores práticas e insights em desenvolvimento de software em vários tópicos.
@@ -61,6 +70,16 @@ We offer a curated selection of courses designed to enhance your skills in vario
   - [Introduction to React](https://react.dev/learn) - Official Introduction from React Documentation. (EN-US)
   - [Creating Your First Application in React](https://balta.io/cursos/criando-um-app-com-react-typeScript-hooks-context-forms) - In this course, we'll build a complete app using React and TypeScript, covering state management with React Context, using React Hooks and React Forms. (PT-BR)
   - [React Hooks Simplified](https://courses.webdevsimplified.com/react-hooks-simplified) - Learn the key React Hooks. (EN-US)
+
+- **Linter**  
+  - [Apply a Linter to the ZerÓbito Project](./articles/linter.md) - This tutorial shows how to define and create rules in a project using React and TypeScript. (PT-BR)  
+  - [TypeScript-ESLint](https://typescript-eslint.io/getting-started/) - Official quick start guide for TypeScript-ESLint. (EN-US)
+
+- **Docker**
+  - [Introduction to Docker: Practical Guide to Key Concepts](./articles/docker.md) - An overview of container creation, automation, and management using Docker Compose and volumes. This tutorial provides a foundation for the main concepts. (PT-BR)  
+  - [Docker Tutorial for Beginners](https://docker-curriculum.com/) - Learn how to set up Docker and run your own containers while building practical applications. (EN-US)  
+  - [Configuring and Managing Multiple Environments](https://overcast.blog/multi-environment-deployments-with-docker-a-guide-890e193191b6) - This tutorial is for users who are comfortable with Docker and want to learn how to create a workflow with different development environments. (EN-US)  
+
 
 ### 📑 Tutorials and Other Materials
 

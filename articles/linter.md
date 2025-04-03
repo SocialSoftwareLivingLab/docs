@@ -1,9 +1,15 @@
-# Linter para TypeScript #3
+# Linter para TypeScript 
 
-## Linter Utilizado
-**typescript-lint**: Adaptador de ESLint e Prettier para TypeScript.
+Neste tutorial, você irá ver como aplicar na prática um linter para aplicações typescript, o typescript-lint. Para isso, iremos aplicar o linter na codebase do projeto Zero Óbito.
+
+O **typescript-lint** é um adaptador de ESLint e Prettier para TypeScript.
 
 ---
+## Setup
+Faça um clone do projeto localmente:
+```sh
+git clone https://github.com/SocialSoftwareLivingLab/zerobito.git
+```
 
 ## Passos
 ### 1. Checkout para o Commit mais recente do Zero Obito sem ESLint
@@ -191,14 +197,11 @@ Para manter o código formatado automaticamente.
 
 ---
 
-## Próximos Passos
-### 📌 **Repo para o Exemplo Completo**
-| TODO
+## 📌 **Repo**
+- [Exemplo final](https://github.com/caiomelloni/zerobito/tree/applies-eslint)
 
-### 📌 **Situação Atual do Lint no Projeto `zero obito`**
-| TODO
 
-### 📌 **Passos Extras**
+## 📌 **Passos Extras**
 - Instalar a extensão **ESLint da Microsoft** no VSCode para exibir os erros diretamente no editor.
 - Para exibir todos os erros no editor, rodar uma task específica:
   ```sh
