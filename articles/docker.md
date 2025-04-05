@@ -42,6 +42,11 @@ um arquivo package.json, mais ou menos igual a:
 }
 ```
 
+Adicione o express ao projeto como dependência de desenvolvimento:
+```js
+npx add-dependencies --dev express
+```
+
 Para o próximo passo, será necessário a criação do Dockerfile, que é um arquivo que especifica quais 
 são as configurações do container, como, por exemplo, o que precisa ser instalado, qual imagem utilizar, que arquivos copiar e quais comandos executar. Sem ele, seria necessário um trabalho manual a toda hora para iniciar o container. Crie o arquivo chamado 'Dockerfile' com o seguinte conteúdo:
 ```Dockerfile
@@ -51,14 +56,11 @@ FROM node:18-alpine
 # Define o diretório de trabalho dentro do container
 WORKDIR /app
 
-# Copia os arquivos necessários para o container
-COPY package.json package-lock.json ./
+# Copia os arquivos para o container
+COPY . .
 
 # Instala as dependências
 RUN npm install
-
-# Copia o restante do código para o container
-COPY . .
 
 # Expõe a porta que o app irá rodar
 EXPOSE 3000
