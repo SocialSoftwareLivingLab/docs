@@ -42,6 +42,11 @@ um arquivo package.json, mais ou menos igual a:
 }
 ```
 
+Adicione o express ao projeto como dependência de desenvolvimento:
+```js
+npx add-dependencies --dev express
+```
+
 Para o próximo passo, será necessário a criação do Dockerfile, que é um arquivo que especifica quais 
 são as configurações do container, como, por exemplo, o que precisa ser instalado, qual imagem utilizar, que arquivos copiar e quais comandos executar. Sem ele, seria necessário um trabalho manual a toda hora para iniciar o container. Crie o arquivo chamado 'Dockerfile' com o seguinte conteúdo:
 ```Dockerfile
@@ -51,14 +56,11 @@ FROM node:18-alpine
 # Define o diretório de trabalho dentro do container
 WORKDIR /app
 
-# Copia os arquivos necessários para o container
-COPY package.json package-lock.json ./
+# Copia os arquivos para o container
+COPY . .
 
 # Instala as dependências
 RUN npm install
-
-# Copia o restante do código para o container
-COPY . .
 
 # Expõe a porta que o app irá rodar
 EXPOSE 3000
@@ -95,6 +97,21 @@ Para saber o id do container use
 docker ps
 ```
 
+**ATENÇÃO**: como estamos usando a mesma porta (3000), temos que parar o container caso seja necessário subir outro. Por isso, caso alguma hora encontre o erro:
+
+ "Error response from daemon: failed to set up container networking: driver failed programming external connectivity on endpoint"
+
+veja o id dos containers que estão ativos com
+```sh
+docker ps
+```
+e pare os containers com o comando
+```sh
+docker stop <id-do-container>
+```
+
+## *Volumes*
+
 - os containers rodam em um ambiente virtual, o que significa que todos os dados criados são perdidos quando o container para, isto é, o container não possui estado.
 - contudo, seria muito interessante, termos logs gravados em diretório local para facilitar a visualização e acompanhamento dos nossos containers,
 pois a visualização dos logs por id apenas fica disponível enquanto o container estiver executando. 
@@ -111,12 +128,15 @@ CMD ["sh", "-c", "node server.js > logs/log.txt 2>&1"]
 ```
 Isso fará o servidor escrever os outputs (console.log) e erros em um arquivo log.txt, dentro da pasta logs
 
+- pare a execução do container com "ctrl + c"
 - agora recontrua a imagem, já que fizemos alterações nela
 ```sh
 docker build -t meu-app-express .
 ```
 
-- inicie um novo container, mas dessa vez, crie um volume, ligando o arquivo de log no ambiente virtual, em um arquivo de log na máquina host
+- inicie um novo container, mas dessa vez, crie um volume, ligando o arquivo de log no ambiente virtual, em um arquivo de log na máquina host.
+- Observação: agora iremos criar o volume pela linha de comando, mas futuramente esse processo será automatizado com um script de docker-compose
+- execute o comando:
 ```sh
 docker run -d -p 3000:3000 -v $(pwd)/logs:/app/logs meu-app-express
 ```
@@ -153,6 +173,10 @@ Se essa imagem não existir localmente, o Docker tentará baixá-la do Docker Hu
 
 Agora podemos verificar, que em nossa máquina, o arquivo "logs/log.txt" contém os outputs do nosso servidor
 
+```sh
+cat logs/log.txt
+```
+
 # Automatização do processo
 Existe uma ferramenta chamada docker-compose que nos auxilia a automatizar o processo de criação e gerenciamento de containers
 - crie um arquivo "docker-compose.yml" com o seguinte conteúdo:
@@ -165,7 +189,7 @@ services:
     ports:
       - "3000:3000" # mapeamento de portas, nesse caso mapeia a 3000 local para a 3000 do ambiente virtual
     volumes:
-      - ./logs:/app/logs # mapeamento de volume como visto anteriormente
+      - ./logs:/app/logs # mapeamento de volume como visto anteriormente, mas agora de forma automatizada
     restart: always  # Reinicia automaticamente em caso de falha
 ```
 Agora podemos facilmente manipular o container com os seguintes comandos:
@@ -175,13 +199,14 @@ Agora podemos facilmente manipular o container com os seguintes comandos:
   - parar e remover tudo (containers, imagens, volumes): docker-compose down --volumes 
 - experimente com "docker-compose up -d" para ver o container em funcionamento
 
+Para esse caso temos apenas um container, então é apenas um exercício didático, mas o docker-compose é usado no mundo real quando temos que gerenciar mais de um container, nesse caso ele é extremamente útil
 
 # Manipulando mais de um container
 Para o próximo passo, iremos utilizar o docker-compose para gerenciar mais de um container, agora iremos interagir com um banco de dados
 
 Instale as dependências necessárias para interagir com o banco
 ```sh
-npm install mongoose express cors body-parser
+npx add-dependencies mongoose express cors body-parser
 ```
 Agora o nosso server irá conter um simples CRUD com MongoDB
 ```javascript
@@ -326,25 +351,104 @@ docker ps
 
 Por fim, vamos testar o CRUD, agora temos uma aplicação completa:
 
-Listar todos os itens (GET)
-```shell
+🟢 1. Criar um novo item (POST /items)
+
+🧪 Comando:
+```bash
+curl -X POST http://localhost:3000/items \
+  -H "Content-Type: application/json" \
+  -d '{"name": "Caderno", "description": "Caderno de anotações"}'
+```
+📤 Resposta esperada:
+```json
+{
+  "_id": "605c72f8e813f5001cfd31d5",
+  "name": "Caderno",
+  "description": "Caderno de anotações",
+  "__v": 0
+}
+```
+🔵 2. Listar todos os itens (GET /items)
+
+🧪 Comando:
+```bash
 curl http://localhost:3000/items
 ```
-
-Buscar um item por ID (GET)
-```shell
-curl http://localhost:3000/items/65ffb1234abc5678
+📤 Resposta esperada:
+```json
+[
+  {
+    "_id": "605c72f8e813f5001cfd31d5",
+    "name": "Caderno",
+    "description": "Caderno de anotações",
+    "__v": 0
+  },
+  {
+    "_id": "605c7314e813f5001cfd31d6",
+    "name": "Caneta",
+    "description": "Caneta azul",
+    "__v": 0
+  }
+]
 ```
+🟡 3. Buscar um item por ID (GET /items/:id)
 
-Atualizar um item (PUT)
-```shell
-curl -X PUT http://localhost:3000/items/65ffb1234abc5678 \
-     -H "Content-Type: application/json" \
-     -d '{"name": "Notebook Gamer", "description": "Agora com mais RAM!"}'
+🧪 Comando:
+```bash
+curl http://localhost:3000/items/605c72f8e813f5001cfd31d5
+📤 Resposta esperada:
+```json
+{
+  "_id": "605c72f8e813f5001cfd31d5",
+  "name": "Caderno",
+  "description": "Caderno de anotações",
+  "__v": 0
+}
 ```
-
-Deletar um item (DELETE)
-```shell
-curl -X DELETE http://localhost:3000/items/65ffb1234abc5678
+Se o ID não existir:
+```json
+{
+  "error": "Item não encontrado"
+}
 ```
+🟠 4. Atualizar um item (PUT /items/:id)
 
+🧪 Comando:
+```bash
+curl -X PUT http://localhost:3000/items/605c72f8e813f5001cfd31d5 \
+  -H "Content-Type: application/json" \
+  -d '{"name": "Caderno Atualizado", "description": "Com capa dura"}'
+```
+📤 Resposta esperada:
+```json
+{
+  "_id": "605c72f8e813f5001cfd31d5",
+  "name": "Caderno Atualizado",
+  "description": "Com capa dura",
+  "__v": 0
+}
+```
+Se o ID não existir:
+```json
+{
+  "error": "Item não encontrado"
+}
+```
+🔴 5. Deletar um item (DELETE /items/:id)
+
+🧪 Comando:
+```bash
+curl -X DELETE http://localhost:3000/items/605c72f8e813f5001cfd31d5
+```
+📤 Resposta esperada:
+```json
+{
+  "message": "Item deletado com sucesso!"
+}
+```
+Se o ID não existir:
+```json
+{
+  "error": "Item não encontrado"
+}
+```

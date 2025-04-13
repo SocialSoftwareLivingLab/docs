@@ -101,7 +101,7 @@ export default tseslint.config(
     },
     {
         rules: {
-            "@typescript-eslint/prefer-promise-reject-errors": "off"
+            "@typescript-eslint/adjacent-overload-signatures": "warn"
         }
     },
     {
