@@ -7,18 +7,18 @@ import type * as Preset from '@docusaurus/preset-classic';
 const config: Config = {
   title: 'Social Software Living Lab',
   tagline: 'Documentos e tutoriais como referências para o desenvolvimento de software no contexto do S2L2.',
-  favicon: 'img/favicon.ico',
+  favicon: 'img/favicon-social-lab.png',
 
   // Set the production url of your site here
-  url: 'https://your-docusaurus-site.example.com',
+  url: 'https://socialsoftwarelivinglab.github.io/',
   // Set the /<baseUrl>/ pathname under which your site is served
   // For GitHub pages deployment, it is often '/<projectName>/'
-  baseUrl: '/',
+  baseUrl: '/site/',
 
   // GitHub pages deployment config.
   // If you aren't using GitHub pages, you don't need these.
-  organizationName: 'facebook', // Usually your GitHub org/user name.
-  projectName: 'docusaurus', // Usually your repo name.
+  organizationName: 'Social Software Living Lab', // Usually your GitHub org/user name.
+  projectName: 'site', // Usually your repo name.
 
   onBrokenLinks: 'warn',
   onBrokenMarkdownLinks: 'warn',
