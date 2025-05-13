@@ -1,4 +1,4 @@
-## 📚 Documentação e Tutoriais
+## 📚 Curadoria de cursos
 ![Conteúdo: Documentação](https://img.shields.io/badge/conteúdo-documentação-007ec6.svg?style=for-the-badge&logo=markdown&logoColor=white)
 ![Objetivo: Aprendizado](https://img.shields.io/badge/objetivo-aprendizado-4c1.svg?style=for-the-badge&logo=githubactions&logoColor=white)
 

@@ -1,4 +1,4 @@
-## 📚 Docs and Tutorials
+## 📚 Course curation
 ![Content: Documentation](https://img.shields.io/badge/content-documentation-007ec6.svg?style=for-the-badge&logo=markdown&logoColor=white)
 ![Goal: Learning](https://img.shields.io/badge/goal-learning-4c1.svg?style=for-the-badge&logo=githubactions&logoColor=white)
 

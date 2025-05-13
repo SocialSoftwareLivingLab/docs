@@ -1,56 +1,67 @@
 import type {ReactNode} from 'react';
 import clsx from 'clsx';
-import Heading from '@theme/Heading';
 import styles from './styles.module.css';
+import Link from '@docusaurus/Link';
 
 type FeatureItem = {
   title: string;
+  to: string;
   Svg: React.ComponentType<React.ComponentProps<'svg'>>;
   description: ReactNode;
 };
 
 const FeatureList: FeatureItem[] = [
   {
-    title: 'Easy to Use',
+    title: 'Documentação 📚',
+    to: '/docs',
     Svg: require('@site/static/img/undraw_docusaurus_mountain.svg').default,
     description: (
       <>
-        Docusaurus was designed from the ground up to be easily installed and
-        used to get your website up and running quickly.
+        Documentação técnica criada pelo S2l2, nossas documentações possuem progressão de nível, começam do básico e vão até o avançado. 
+        Como se fosse uma história, onde cada nível é uma nova etapa.
       </>
     ),
   },
   {
-    title: 'Focus on What Matters',
+    title: 'Curadoria 💡',
+    to: '/curadoria',
     Svg: require('@site/static/img/undraw_docusaurus_tree.svg').default,
     description: (
       <>
-        Docusaurus lets you focus on your docs, and we&apos;ll do the chores. Go
-        ahead and move your docs into the <code>docs</code> directory.
+        Selecionamos os melhores conteúdos para você, desde tutoriais até artigos e vídeos. Para aqueles que querem ir direto ao ponto.
       </>
     ),
   },
   {
-    title: 'Powered by React',
+    title: 'PBL 🤔',
+    to: '/docs/intro',
     Svg: require('@site/static/img/undraw_docusaurus_react.svg').default,
     description: (
       <>
-        Extend or customize your website layout by reusing React. Docusaurus can
-        be extended while reusing the same header and footer.
+        Problem Based Learning, é um método de ensino que busca desenvolver habilidades de pensamento crítico, resolução de problemas e colaboração. 
+        Aprenda enquanto resolve desafios e compartilhe sua solução e aprendizado com outros alunos.
       </>
     ),
   },
 ];
 
-function Feature({title, Svg, description}: FeatureItem) {
+function Feature({title, to, Svg, description}: FeatureItem) {
   return (
     <div className={clsx('col col--4')}>
       <div className="text--center">
         <Svg className={styles.featureSvg} role="img" />
+        <div className={styles.buttons}>
+          <Link style={{display: 'flex', alignItems: 'center', justifyContent: 'center'}}
+            className="button button--secondary button--lg"
+            to={to}>
+            {title}
+          </Link>
+        </div>
       </div>
       <div className="text--center padding-horiz--md">
-        <Heading as="h3">{title}</Heading>
-        <p>{description}</p>
+        {/* <Heading as="h3">{title}</Heading> */}
+
+        <p className="padding-top--md">{description}</p>
       </div>
     </div>
   );
