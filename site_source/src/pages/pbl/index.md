@@ -43,7 +43,7 @@ Os desafios estão organizados por níveis. Comece do seu nível de conforto e a
 
 ### 🔰 Iniciante
 
-- [Desafio 01 — Conversor de Temperatura](./pbl/desafio-01)
+- [Desafio 01 — Blog Api](./pbl/desafio-01)
 - [Desafio 02 — TODO](./desafio-02)
 - [Desafio 03 — TODO](./desafio-03)
 - [Desafio 04 — TODO](./desafio-04)

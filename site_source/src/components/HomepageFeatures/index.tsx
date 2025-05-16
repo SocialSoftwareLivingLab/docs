@@ -34,7 +34,7 @@ const FeatureList: FeatureItem[] = [
   },
   {
     title: 'PBL 🤔',
-    to: '/docs/intro',
+    to: '/pbl',
     Svg: require('@site/static/img/undraw_docusaurus_react.svg').default,
     description: (
       <>
