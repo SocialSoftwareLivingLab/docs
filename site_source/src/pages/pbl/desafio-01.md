@@ -130,4 +130,6 @@ Abra uma [issue no GitHub](https://github.com/s2l2/pbl/issues) ou venha conversa
 
 ---
 
-👉 [Voltar à lista de desafios](./intro)
+👉 [Voltar à lista de desafios](../pbl)
+
+⛭ [Editar essa página](https://github.com/SocialSoftwareLivingLab/docs/blob/main/site_source/src/pages/pbl/desafio-01.md)

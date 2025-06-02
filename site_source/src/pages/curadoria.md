@@ -46,3 +46,4 @@ Explore nossa coleção de artigos, onde discutimos as últimas tendências, mel
 Por favor, sinta-se livre para abrir uma issue com sugestões ou correções em nossa documentação. Ao abrir issues, por favor, utilize etiquetas adequadas.
 
 ---
+⛭ [Editar essa página](https://github.com/SocialSoftwareLivingLab/docs/blob/main/site_source/src/pages/curadoria.md)
