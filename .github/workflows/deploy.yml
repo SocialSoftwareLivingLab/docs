@@ -1,0 +1,38 @@
+name: Build and Deploy
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  build-and-deploy:
+    runs-on: ubuntu-latest
+
+    steps:
+      # Get the source code
+      - name: Checkout source repo
+        uses: actions/checkout@v4
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '18'
+
+      - name: Install dependencies
+        run: npm ci
+        working-directory: ./site_source
+
+      - name: Build the project
+        run: npm run build
+        working-directory: ./site_source
+
+      - name: Push to target repo
+        uses: peaceiris/actions-gh-pages@v3
+        with:
+          github_token: ${{ secrets.GH_PERSONAL_TOKEN }}
+          publish_dir: ./site_source/build
+          external_repository: SocialSoftwareLivingLab/site
+          publish_branch: website
+          commit_message: 'Deploy from source repo ${{ github.repository }}'
+
