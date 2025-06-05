@@ -1,6 +1,6 @@
 ---
 id: cap-7
-title: 07 - Automatizando o Docker
+title: 07 - Automatizando o Docker (DOING)
 sidebar_position: 7
 ---
 
@@ -192,26 +192,6 @@ Evite usar `latest` como tag da imagem em produção. Isso pode mudar sem aviso 
 :::tip
 Coloque seu `docker-compose.yml` e o `.env` na raiz do projeto. Isso facilita o deploy e manutenção.
 :::
-
----
-
-## 🧪 Desafio: Pratique!
-
-Crie um `docker-compose.yml` com:
-
-✅ Um app em Flask (Python)  
-✅ Um banco PostgreSQL  
-✅ Variáveis de ambiente via `.env`  
-✅ Persistência de dados  
-✅ Comunicação entre serviços  
-
-Depois rode:
-
-```bash
-docker compose up
-```
-
-Se quiser, me manda que eu reviso! 😄
 
 ---
 

@@ -1,6 +1,6 @@
 ---
 id: cap-6
-title: 06 - Volumes e Persistência de Dados
+title: 06 - Persistência de Dados
 sidebar_position: 6
 ---
 
