@@ -259,4 +259,4 @@ Você agora domina os três principais mecanismos de persistência no Docker:
 - 🗂️ **Bind Mounts:** excelente para desenvolvimento, onde você quer que mudanças no seu computador reflitam no container em tempo real.
 - ⚡ **tmpfs:** perfeito para dados temporários, sensíveis ou para cargas que exigem máxima performance.
 
-No próximo capítulo, vamos aprender como gerenciar recursos, como limitar CPU, memória e controlar melhor os containers. Bora avançar! 🚀
+Aqui foi todo o conteúdo básico de Docker, a partir de agora você está preparado para se virar por conta própria. O próximo capítulo será um extra de como automatizar processos, até lá! 🚀
