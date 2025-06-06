@@ -14,7 +14,7 @@ const FeatureList: FeatureItem[] = [
   {
     title: 'Documentação 📚',
     to: '/docs',
-    Svg: require('@site/static/img/undraw_docusaurus_mountain.svg').default,
+    Svg: require('@site/static/img/docs-banner.svg').default,
     description: (
       <>
         Documentação técnica criada pelo S2l2, nossas documentações possuem progressão de nível, começam do básico e vão até o avançado. 
@@ -25,7 +25,7 @@ const FeatureList: FeatureItem[] = [
   {
     title: 'Curadoria 💡',
     to: '/curadoria',
-    Svg: require('@site/static/img/undraw_docusaurus_tree.svg').default,
+    Svg: require('@site/static/img/curation-banner.svg').default,
     description: (
       <>
         Selecionamos os melhores conteúdos para você, desde tutoriais até artigos e vídeos. Para aqueles que querem ir direto ao ponto.

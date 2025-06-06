@@ -19,7 +19,7 @@ Oferecemos uma seleção curada de cursos projetados para aprimorar suas habilid
   - [React Hooks Simplified](https://courses.webdevsimplified.com/react-hooks-simplified) - Aprenda os principais Hooks do React. (EN-US)
 
 - **Linter**
-  <!-- - [Aplique um linter no projeto ZerÓbito](./articles/linter.md) - Este tutorial mostra como definir e criar regras em projeto com React e Typescript. (PT-BR) -->
+  - [Aplique um linter no projeto ZerÓbito](/articles/linter) - Este tutorial mostra como definir e criar regras em projeto com React e Typescript. (PT-BR)
   - [Typescript-eslint](https://typescript-eslint.io/getting-started/) - Quick start oficial do typescript-eslint. (EN-US)
 
 - **Docker**
@@ -35,7 +35,7 @@ Explore nossa coleção de artigos, onde discutimos as últimas tendências, mel
   - [Como Configurar um Ambiente Virtual em Python – E Porque Isso é Útil](https://www.freecodecamp.org/news/how-to-setup-virtual-environments-in-python/)  
 
 - 🏗️ **Arquitetura de Software**
-  - [Arquitetura de Referência para Aplicações Web](SwArch/ReferenceWebArchitecture.md)
+  - [Arquitetura de Referência para Aplicações Web](/articles/SwArch/ReferenceWebArchitecture)
   - [Como usar MVVM em uma Aplicação React com Typescript e Hooks](https://www.perssondennis.com/articles/how-to-use-mvvm-in-react-using-hooks-and-typescript)
  
 - ⚙️ **Github Actions**

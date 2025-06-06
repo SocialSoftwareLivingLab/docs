@@ -153,7 +153,7 @@ const config: Config = {
       //     ],
       //   },
       // ],
-      copyright: `Copyright © ${new Date().getFullYear()} Social Software Living Lab, Inc. Built with Docusaurus.`,
+      copyright: `Copyright © ${new Date().getFullYear()} Social Software Living Lab.`,
     },
     prism: {
       theme: prismThemes.github,
