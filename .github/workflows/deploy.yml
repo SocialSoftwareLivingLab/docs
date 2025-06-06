@@ -26,3 +26,22 @@ jobs:
       - name: Build the project
         run: npm run build
         working-directory: ./site_source
+
+      - name: Deploy to site branch
+        run: |
+          git config --global user.name 'GitHub Actions'
+          git config --global user.email 'actions@github.com'
+
+          # Clone the repo into a temp directory and checkout the site branch
+          git clone --branch=site --single-branch https://github.com/${{ github.repository }} site_output
+          rm -rf site_output/*
+
+          # Copy the build output to the site branch folder
+          cp -r site_source/build/* site_output/
+
+          cd site_output
+          git add .
+          git commit -m "Deploy site from commit ${{ github.sha }}" || echo "No changes to commit"
+          git push origin site
+        env:
+          GITHUB_TOKEN: ${{ secrets.GH_PERSONAL_TOKEN }}
