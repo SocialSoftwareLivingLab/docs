@@ -26,13 +26,3 @@ jobs:
       - name: Build the project
         run: npm run build
         working-directory: ./site_source
-
-      - name: Push to target repo
-        uses: peaceiris/actions-gh-pages@v3
-        with:
-          github_token: ${{ secrets.GH_PERSONAL_TOKEN }}
-          publish_dir: ./site_source/build
-          external_repository: SocialSoftwareLivingLab/site
-          publish_branch: website
-          commit_message: 'Deploy from source repo ${{ github.repository }}'
-
