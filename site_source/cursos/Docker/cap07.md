@@ -1,6 +1,6 @@
 ---
 id: cap-7
-title: 07 - Automatizando o Docker (DOING)
+title: 07 - Automatizando o Docker (NOT COMPLETED)
 sidebar_position: 7
 ---
 
