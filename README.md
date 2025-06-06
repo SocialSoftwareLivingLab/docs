@@ -3,15 +3,9 @@
 ![Conteúdo: Documentação](https://img.shields.io/badge/conteúdo-documentação-007ec6.svg?style=for-the-badge\&logo=markdown\&logoColor=white)
 ![Objetivo: Aprendizado](https://img.shields.io/badge/objetivo-aprendizado-4c1.svg?style=for-the-badge\&logo=githubactions\&logoColor=white)
 
-O **S2L2 (Social Software Living Lab)** é uma iniciativa do setor público voltada à disseminação de conhecimento e ao fortalecimento da educação em tecnologias sociais e software livre. Este repositório abriga os metadados, conteúdos e materiais de apoio do [site educacional oficial do S2L2](https://socialsoftwarelivinglab.github.io/site/).
+O **S2L2 (Social Software Living Lab)** é uma iniciativa do setor público voltada à disseminação de conhecimento e ao fortalecimento da educação em tecnologias sociais e software livre. Este repositório abriga os metadados, conteúdos e materiais de apoio do [site educacional oficial do S2L2](https://socialsoftwarelivinglab.github.io/docs/).
 
 A plataforma foi desenvolvida com o framework [Docusaurus](https://docusaurus.io/), que oferece uma estrutura acessível, organizada e responsiva para visualização e manutenção da documentação.
-
----
-
-### 🚀 Visão Geral
-
-O projeto tem como objetivo ser uma base educativa colaborativa sobre tecnologias sociais, incentivando o uso e a produção de conteúdo aberto. A ideia é permitir que qualquer pessoa possa aprender, ensinar ou contribuir com conhecimento técnico e socialmente relevante, promovendo práticas abertas e sustentáveis.
 
 ---
 
@@ -71,24 +65,14 @@ Os desafios estão no diretório [`site_source/src/pages/pbl`](./site_source/src
 
 ---
 
-Claro! Aqui está a versão em inglês do README, escrita para combinar com o estilo aprimorado da versão em português, mantendo consistência, clareza e fluidez profissional:
-
----
-
 ## 📚 S2L2 Educational (English Version)
 
 ![Content: Documentation](https://img.shields.io/badge/content-documentation-007ec6.svg?style=for-the-badge\&logo=markdown\&logoColor=white)
 ![Goal: Learning](https://img.shields.io/badge/goal-learning-4c1.svg?style=for-the-badge\&logo=githubactions\&logoColor=white)
 
-**S2L2 (Social Software Living Lab)** is a public-sector initiative focused on sharing knowledge and strengthening education in social technologies and free/libre software. This repository hosts the metadata, content, and support materials for the [official S2L2 educational website](https://socialsoftwarelivinglab.github.io/site/).
+**S2L2 (Social Software Living Lab)** is a public-sector initiative focused on sharing knowledge and strengthening education in social technologies and free/libre software. This repository hosts the metadata, content, and support materials for the [official S2L2 educational website](https://socialsoftwarelivinglab.github.io/docs/).
 
 The platform is built using the [Docusaurus](https://docusaurus.io/) documentation framework, which offers an accessible, well-organized, and responsive structure for browsing and maintaining content.
-
----
-
-### 🚀 Overview
-
-The main goal of this project is to serve as a collaborative educational hub for social technologies, encouraging the use and creation of open educational resources. Anyone can participate by learning, teaching, or contributing content that supports technically sound and socially impactful practices.
 
 ---
 
