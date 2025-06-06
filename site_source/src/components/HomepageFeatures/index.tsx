@@ -12,8 +12,8 @@ type FeatureItem = {
 
 const FeatureList: FeatureItem[] = [
   {
-    title: 'Documentação 📚',
-    to: '/docs',
+    title: 'Cursos 📚',
+    to: '/cursos',
     Svg: require('@site/static/img/docs-banner.svg').default,
     description: (
       <>
