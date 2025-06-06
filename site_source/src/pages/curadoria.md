@@ -27,7 +27,7 @@ Oferecemos uma seleção curada de cursos projetados para aprimorar suas habilid
   - [Tutorial de Docker para iniciantes](https://docker-curriculum.com/) - Aprenda a configurar o Docker e executar seus próprios contêineres, enquanto realiza aplicações na prática. (EN-US)
   - [Configuração e gerenciamento de múltiplos ambientes](https://overcast.blog/multi-environment-deployments-with-docker-a-guide-890e193191b6) - Este é um tutorial para usuários que se sentem confortáveis com docker e querem aprender a como criar um workflow com diferentes ambientes de desenvolvimento. (EN-US)
 
-### 📑 Tutoriais e Outros Materiais
+### 📑 Tutoriais e Materiais
 
 Explore nossa coleção de artigos, onde discutimos as últimas tendências, melhores práticas e insights em desenvolvimento de software em vários tópicos.
 
